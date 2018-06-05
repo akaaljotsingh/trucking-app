@@ -14,3 +14,234 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.day-count {
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+}
+.red ion-card-header {
+    background-color: rgb(222,91,73);
+}
+.green ion-card-header {
+    background-color: rgb(112,222,131);
+}
+.orange ion-card-header {
+    background-color: rgb(245,157,84);
+}
+.red ion-card {
+    background-color: rgba(222,91,73,0.11);
+}
+.green ion-card {
+    background-color: rgba(112,222,131,0.11);
+}
+.orange ion-card {
+    background-color: rgba(245,157,84,0.11);
+}
+
+.col {
+    flex: 0 0 50%;
+    width: 50%;
+}
+ion-card {
+    margin: 0 !important;
+    width: 100% !important;
+    background: #324d5c !important;
+}
+ion-card-content {
+    font-size: 1.4rem !important;
+    padding: 13px 0 !important;
+    padding-top: 0 !important;
+    color: #fff;
+}
+ion-card-header {
+    width: 42px;
+    height: 42px;
+    color: #fff !important;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+    line-height: 40px;
+    font-size: 1.7rem;
+    padding: 0 !important;
+    padding-left: 1px !important;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+}
+
+.toolbar-background {
+    background-color: #324d5c;
+}
+.toolbar-title,
+.bar-button {
+    color: #fff;
+}
+
+
+/* Forms */
+.item-inner {
+    border: none !important;
+}
+.grey-bg {
+    background-color: #F6F7FB;
+}
+.form-heading {
+    background: #324d5c;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #ffffff;
+    padding: 10px 16px;
+}
+ion-list.card {
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
+}
+ion-item {
+    background-color: transparent !important;
+    border: none !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+ion-input,
+ion-textarea {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.input-has-focus,
+.item-input-has-focus {
+    border: none !important;
+    outline: none !important;
+}
+.item-inner {
+    padding-right: 0 !important;
+}
+ion-datetime,
+ion-select {
+    padding: 9px 8px 9px 11px !important;
+}
+ion-datetime button,
+ion-select button {
+    padding: 0 15px;
+}
+ion-datetime .button-inner,
+ion-select .button-inner {
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.date-wrap ion-label {
+    padding: 0 15px;
+    color: #212121 !important;
+    opacity: 0.5 !important;
+}
+ion-label {
+    color: #212121!important;
+    opacity: 0.5 !important;
+    margin-bottom: 4px !important;
+}
+ion-item.item-datetime {
+    min-height: inherit !important;
+}
+ion-select {
+    max-width: inherit !important;
+    width: 100% !important;
+}
+.item-block {
+    min-height: 0% !important;
+}
+
+/**********************************/
+
+.tgl label {
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-top: 21px;
+    margin-bottom: 8px;
+}
+.tgl label:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    background-color: grey;
+    position: absolute;
+    right: 18px;
+    border-radius: 50px;
+    padding: 2px;
+    margin-top: -2px;
+    margin-right: -2px;
+    opacity: 0.7;
+}
+.tgl label:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 33px;
+}
+.tgl input {
+    display: none;
+}
+.tgl input:checked ~ label:after {
+    right: 18px;
+}
+.tgl input:checked ~ label:before {
+    background: #00b0f0;
+    opacity: 1;
+}
+
+
+.padding {
+    padding: 0 15px;
+    margin-top: 15px;
+}
+.button {
+    margin: 0 !important;
+}
+
+.doc-card {
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
+    padding: 15px;
+    float: left;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.doc-card .left {
+    float: left;
+    width: 85%;
+}
+.doc-card .right {
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+.doc-card button {
+    background: #324d5c !important;
+    border-radius: 50%;
+}
+.doc-card button img {
+    max-width: 20px;
+}
+.doc-card span {
+    margin-left: 4px;
+    margin-top: -10px;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.4;
+}
+.doc-card h5 {
+    color: #324d5c;
+}

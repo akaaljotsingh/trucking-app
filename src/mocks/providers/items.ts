@@ -7,49 +7,63 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "Burt Bear",
-    "profilePic": "assets/img/speakers/bear.jpg",
-    "about": "Burt is a Bear.",
+    "name": "Driving Licence",
+    "dayCount": "20",
   };
 
 
   constructor() {
     let items = [
       {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
+        "name": "Driving Licence",
+        "dayCount": "20",
+        "alertColor": "red"
       },
       {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
+        "name": "Medical Card",
+        "dayCount": "30",
+        "alertColor": "orange"
       },
       {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
+        "name": "Annual Review",
+        "dayCount": "40",
+        "alertColor": "green"
       },
       {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
+        "name": "Truck/Bit Inspection",
+        "dayCount": "20",
+        "alertColor": "red"
       },
       {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
+        "name": "Truck/DOT Annual",
+        "dayCount": "70",
+        "alertColor": "orange"
       },
       {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
+        "name": "Truck/Registration",
+        "dayCount": "20",
+        "alertColor": "green"
       },
       {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
-      }
+        "name": "Trailor/Bit Inspection",
+        "dayCount": "30",
+        "alertColor": "red"
+      },
+      {
+        "name": "Trailor/DOT Annual",
+        "dayCount": "20",
+        "alertColor": "orange"
+      },
+      {
+        "name": "Trailor/Registration",
+        "dayCount": "26",
+        "alertColor": "green"
+      },
+      {
+        "name": "Ifta Permit",
+        "dayCount": "20",
+        "alertColor": "red"
+      },
     ];
 
     for (let item of items) {

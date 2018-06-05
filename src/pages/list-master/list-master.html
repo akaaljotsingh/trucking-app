@@ -15,21 +15,21 @@
 <ion-content>
 
   <ion-list>
-    <ion-item-sliding *ngFor="let item of currentItems">
-      <button ion-item (click)="openItem(item)">
-        <ion-avatar item-start>
-          <img [src]="item.profilePic" />
-        </ion-avatar>
-        <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
-      </button>
-
-      <ion-item-options>
-        <button ion-button color="danger" (click)="deleteItem(item)">
-          {{ 'DELETE_BUTTON' | translate }}
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
+      <ion-grid>
+          <ion-row>
+            <ion-col *ngFor="let item of currentItems" width-50 text-center>
+              <div class="{{item.alertColor}}">
+                <ion-card>
+                  <ion-card-header>
+                      {{item.dayCount}}
+                  </ion-card-header>
+                  <ion-card-content>
+                      {{item.name}}
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
   </ion-list>
 </ion-content>

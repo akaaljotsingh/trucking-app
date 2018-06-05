@@ -9,34 +9,152 @@
 
 <ion-content>
   <form (submit)="doSignup()">
-    <ion-list>
+    <ion-list *ngIf="signupSteps==1">
+
+      <div class="date-wrap">
+        <ion-label stacked>Business type</ion-label>
+      <ion-item>
+        <ion-select placeholder="Select State">
+          <ion-option value="individual">Individual</ion-option>
+          <ion-option value="llc">LLC</ion-option>
+          <ion-option value="partnership">Partnership</ion-option>
+          <ion-option value="corporation">Corporation</ion-option>
+        </ion-select>
+      </ion-item>
+      </div>
 
       <ion-item>
-        <ion-label fixed>{{ 'NAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.name" name="name"></ion-input>
+        <ion-label stacked>Name of Company</ion-label>
+        <ion-input type="text" placeholder="Name of Company"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+        <ion-label stacked>Your Email</ion-label>
+        <ion-input type="email" placeholder="Your Email"></ion-input>
       </ion-item>
 
-      <!--
-      Want to add a Username? Here you go:
-
       <ion-item>
-        <ion-label floating>Username</ion-label>
-        <ion-input type="text" [(ngModel)]="account.username" name="username"></ion-input>
-      </ion-item>
-      -->
-
-      <ion-item>
-        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+        <ion-label stacked>Contact Number</ion-label>
+        <ion-input type="number" placeholder="Contact Number"></ion-input>
       </ion-item>
 
       <div padding>
-        <button ion-button color="primary" block>{{ 'SIGNUP_BUTTON' | translate }}</button>
+        <button ion-button color="primary" block (click)="signupSteps=2">Next</button>
+      </div>
+
+    </ion-list>
+
+
+    <ion-list *ngIf="signupSteps==2">
+
+      <ion-item>
+        <ion-label stacked>Username</ion-label>
+        <ion-input type="text" placeholder="Username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Password</ion-label>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Confirm Password</ion-label>
+        <ion-input type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block (click)="signupSteps=3">Next</button>
+      </div>
+
+    </ion-list>
+
+
+    <ion-list *ngIf="signupSteps==3">
+
+      <ion-item>
+        <ion-label stacked>Credit card number</ion-label>
+        <ion-input type="number" placeholder="Username"></ion-input>
+      </ion-item>
+
+      <div class="date-wrap">
+        <ion-label stacked>Month</ion-label>
+      <ion-item>
+        <ion-select placeholder="Select State">
+          <ion-option value="jan">Jan</ion-option>
+          <ion-option value="feb">Feb</ion-option>
+          <ion-option value="mar">Mar</ion-option>
+          <ion-option value="Apr">Apr</ion-option>
+          <ion-option value="may">May</ion-option>
+          <ion-option value="jun">Jun</ion-option>
+          <ion-option value="jul">Jul</ion-option>
+          <ion-option value="aug">Aug</ion-option>
+          <ion-option value="sep">Sep</ion-option>
+          <ion-option value="oct">Oct</ion-option>
+          <ion-option value="nov">Nov</ion-option>
+          <ion-option value="dec">Dec</ion-option>
+        </ion-select>
+      </ion-item>
+      </div>
+
+      <div class="date-wrap">
+        <ion-label stacked>Year</ion-label>
+      <ion-item>
+        <ion-select placeholder="Select State">
+          <ion-option value="2019">2019</ion-option>
+          <ion-option value="2020">2020</ion-option>
+          <ion-option value="2021">2021</ion-option>
+          <ion-option value="2022">2022</ion-option>
+          <ion-option value="2023">2023</ion-option>
+          <ion-option value="2024">2024</ion-option>
+          <ion-option value="2025">2025</ion-option>
+          <ion-option value="2026">2026</ion-option>
+          <ion-option value="2027">2027</ion-option>
+          <ion-option value="2028">2028</ion-option>
+        </ion-select>
+      </ion-item>
+      </div>
+
+      <ion-item>
+        <ion-label stacked>CVV</ion-label>
+        <ion-input type="number" placeholder="CVV"></ion-input>
+      </ion-item>
+
+      <div class="date-wrap">
+        <ion-label stacked>Country</ion-label>
+      <ion-item>
+        <ion-select placeholder="Select Country">
+          <ion-option value="China">China</ion-option>
+          <ion-option value="Canada">Canada</ion-option>
+          <ion-option value="India">India</ion-option>
+          <ion-option value="America">America</ion-option>
+        </ion-select>
+      </ion-item>
+      </div>
+
+      <ion-item>
+        <ion-label stacked>Postal Code</ion-label>
+        <ion-input type="number" placeholder="Postal Code"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button color="primary" block (click)="signupSteps=4">Start 1 month free trail</button>
+      </div>
+
+    </ion-list>
+
+
+    <ion-list *ngIf="signupSteps==4">
+
+      <div padding>
+          <p>Confirmation</p>
+          <div>
+            You are one step behind to login in the system!!!<br>
+            Please verify you email address and login to the system.
+          </div>
+      </div>
+
+       <div padding>
+          <button ion-button block (click)="login()">Login</button>
       </div>
 
     </ion-list>

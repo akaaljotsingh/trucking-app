@@ -8,11 +8,14 @@
 
 
 <ion-content>
-  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.profilePic + ')'">
-  </div>
+  <span class="day-count day-count-big {{item.alertColor}}" text-center>
+    {{item.dayCount}}
+  </span>
 
   <div class="item-detail" padding>
     <h2>{{item.name}}</h2>
     <p>{{item.about}}</p>
   </div>
 </ion-content>
+
+

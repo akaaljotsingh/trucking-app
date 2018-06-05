@@ -1,0 +1,168 @@
+<!--
+  Generated template for the DriverPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Truck</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="grey-bg">
+  <ion-list class="card">
+
+    <h5 class="form-heading">Truck Information</h5>
+
+    <div class="date-wrap">
+      <ion-label stacked>Type</ion-label>
+    <ion-item>
+      <ion-select placeholder="Type of truck">
+        <ion-option value="Heavy">Heavy</ion-option>
+        <ion-option value="Pickup">Pickup</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="date-wrap">
+    <ion-label stacked>Ownership</ion-label>
+  <ion-item>
+    <ion-select placeholder="Ownership">
+      <ion-option value="Owned">Owned</ion-option>
+      <ion-option value="Leased">Leased</ion-option>
+    </ion-select>
+  </ion-item>
+</div>
+
+<ion-item>
+  <ion-label stacked>Truck Number</ion-label>
+  <ion-input type="number" placeholder="Truck Number"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label stacked>VIN</ion-label>
+  <ion-input type="number" placeholder="VIN"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label stacked>Year</ion-label>
+  <ion-input type="number" placeholder="Year"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label stacked>Make</ion-label>
+  <ion-input type="number" placeholder="Make"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label stacked>Model</ion-label>
+  <ion-input type="number" placeholder="Model"></ion-input>
+</ion-item>
+
+<div class="date-wrap">
+  <ion-label stacked>State</ion-label>
+<ion-item>
+  <ion-select placeholder="Select State">
+    <ion-option value="Alberta">Alberta</ion-option>
+    <ion-option value="BC">BC</ion-option>
+    <ion-option value="Ontario">Ontario</ion-option>
+    <ion-option value="Yokon">Yokon</ion-option>
+  </ion-select>
+</ion-item>
+</div>
+
+<ion-item>
+  <ion-label stacked>Licence Plate</ion-label>
+  <ion-input type="number" placeholder="Licence Plate"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label stacked>Tare</ion-label>
+  <ion-input type="text" placeholder="Tare"></ion-input>
+</ion-item>
+  
+  </ion-list>
+
+
+  <ion-list class="card">
+
+    <h5 class="form-heading">Tax information / Others</h5>
+
+    <div class="tgl">
+      <input id="a9" type="checkbox">
+      <label for="a9">Non IFTA</label>
+    </div>
+    
+    <div class="tgl">
+      <input id="a5" type="checkbox">
+      <label for="a5">Purchased New</label>
+    </div>
+
+    <div class="date-wrap">
+      <ion-label stacked>Purchase Date</ion-label>
+      <ion-item>
+        <ion-datetime displayFormat="DD/MM/YYYY" placeholder="Purchase Date"></ion-datetime>
+      </ion-item>
+    </div>
+
+    <ion-item>
+      <ion-label stacked>Purchase Price</ion-label>
+      <ion-input type="number" placeholder="Purchase Price"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>NY Permit</ion-label>
+      <ion-input type="text" placeholder="NY Permit"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>NY Gross</ion-label>
+      <ion-input type="text" placeholder="NY Gross"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Notes</ion-label>
+      <ion-textarea type="text" placeholder="Notes"></ion-textarea>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list class="card">
+
+    <h5 class="form-heading">Physical Damage Insurance</h5>
+
+    <div class="tgl">
+      <input id="a2" type="checkbox">
+      <label for="a2">Insured</label>
+    </div>
+
+    <div class="date-wrap">
+      <ion-label stacked>Insured Date</ion-label>
+      <ion-item>
+        <ion-datetime displayFormat="DD/MM/YYYY" placeholder="Insured Date"></ion-datetime>
+      </ion-item>
+    </div>
+
+    <ion-item>
+      <ion-label stacked>Insured Value</ion-label>
+      <ion-input type="text" placeholder="Insured Value"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Annual Premium</ion-label>
+      <ion-input type="text" placeholder="Annual Premium"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Depreciated Value</ion-label>
+      <ion-input type="text" placeholder="Depreciated Value"></ion-input>
+    </ion-item>
+
+
+  </ion-list>
+
+</ion-content>
