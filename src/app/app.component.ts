@@ -35,7 +35,7 @@ export class MyApp {
     { title: 'Driver', component: 'DriverPage' },
     { title: 'Truck', component: 'TruckPage' },
     { title: 'Trailer', component: 'TrailerPage' },
-    { title: 'Documents', component: 'DocsPage' },
+    { title: 'Documents', component: 'DocTabsPage' },
     { title: 'Welcome', component: 'WelcomePage' },
     // { title: 'Tabs', component: 'TabsPage' },
     // { title: 'Cards', component: 'CardsPage' },

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 
+import { AddDocsModelPage } from '../add-docs-model/add-docs-model';
 /**
  * Generated class for the DriverTabPage page.
  *
@@ -15,11 +16,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DriverTabPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DriverTabPage');
+  }
+
+  addDocModal() {
+    let contactModal = this.modalCtrl.create('AddDocsModelPage');
+    contactModal.present();
   }
 
 }
