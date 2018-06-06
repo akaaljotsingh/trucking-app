@@ -7,12 +7,15 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Trailer</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Trailer Documents</ion-title>
     <ion-buttons end>
-        <button ion-button icon-only (click)="addDocModal()">
-          <ion-icon name="add"></ion-icon>
-        </button>
-      </ion-buttons>
+      <button ion-button icon-only (click)="addDocModal()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
