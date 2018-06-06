@@ -11,7 +11,6 @@ import { Settings } from '../providers';
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -19,6 +18,7 @@ import { Settings } from '../providers';
       <ion-list>
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           {{p.title}}
+          <hr *ngIf="p.break == true">
         </button>
       </ion-list>
     </ion-content>
@@ -35,7 +35,10 @@ export class MyApp {
     { title: 'Driver', component: 'DriverPage' },
     { title: 'Truck', component: 'TruckPage' },
     { title: 'Trailer', component: 'TrailerPage' },
-    { title: 'Documents', component: 'DocTabsPage' },
+    { title: 'Documents', component: 'DocTabsPage', break:true},
+    { title: 'My Profile', component: 'MyProfilePage' },
+    { title: 'My Account', component: 'MyAccountPage' },
+    { title: 'Payment History', component: 'PaymentHistoryPage' },
    // { title: 'Welcome', component: 'WelcomePage' },
     // { title: 'Tabs', component: 'TabsPage' },
     // { title: 'Cards', component: 'CardsPage' },

@@ -98,6 +98,7 @@ ion-list.card {
     padding-bottom: 30px;
     border-radius: 4px;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
+    margin: -1px 0 20px;
 }
 ion-item {
     background-color: transparent !important;
@@ -244,4 +245,64 @@ ion-select {
 }
 .doc-card h5 {
     color: #324d5c;
+}
+
+.text-line {
+    font-size: 15px;
+}
+.text-line span {
+    float: right;
+}
+
+page-payment-history ion-col.col {
+    flex: 0 0 33.3%;
+    width: 33.3%;
+    text-align: center;
+}
+.headings {
+    font-weight: bold;
+}
+page-payment-history ion-row {
+    border-bottom: 1px solid grey;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+page-payment-history ion-row ion-col:nth-child(1) {
+    text-align: left;   
+}
+
+.menu-inner ion-content {
+    background: #324d5c !important; /* Old browsers */
+}
+.menu-inner ion-content button {
+    background: transparent !important;
+}
+.menu-inner ion-content ion-label {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+.menu-inner hr {
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.menu-inner .item-md {
+    padding-right: 8px !important;
+}
+
+
+.menu-inner .list-ios > .item-block:last-child {
+    border: none;
+}
+.menu-inner .toolbar-background {
+    background-image: url('../../resources/bgg.png') !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-inner .scroll-content {
+    margin-top: 151px !important;
+}
+.menu-inner .toolbar {
+ min-height: 145px;
 }
