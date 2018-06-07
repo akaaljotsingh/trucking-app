@@ -33,6 +33,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
+    { title: 'Dashboard', component: 'ListMasterPage', imgURL: '../assets/icon/dashboard.svg' },
     { title: 'My Profile', component: 'MyProfilePage', imgURL: '../assets/icon/profile.svg' },
     { title: 'My Account', component: 'MyAccountPage', imgURL: '../assets/icon/account.svg'},
     { title: 'Payment History', component: 'PaymentHistoryPage', break:true, imgURL: '../assets/icon/payment.svg'},

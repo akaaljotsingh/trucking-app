@@ -230,21 +230,22 @@ ion-select {
     width: 40px;
 }
 .doc-card button {
-    background: #324d5c !important;
+    background: #de5b49 !important;
     border-radius: 50%;
+}
+.doc-card button.has-file {
+    background: #70de83 !important;
 }
 .doc-card button img {
     max-width: 20px;
 }
 .doc-card span {
-    margin-left: 4px;
-    margin-top: -10px;
-    display: inline-block;
     font-size: 12px;
     opacity: 0.4;
 }
 .doc-card h5 {
     color: #324d5c;
+    margin: 0 !important;
 }
 
 .text-line {
@@ -352,3 +353,46 @@ page-signup ion-label {
     text-align: left;
 }
 
+
+
+
+page-doc-tabs ion-tabs a .icon {
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 40px !important;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    min-width: auto  !important;
+    background-position: center;
+}
+page-doc-tabs ion-tabs a .icon[ng-reflect-name="truck"] {
+    background-image: url(../assets/icon/truck-dark.svg) !important;
+}
+page-doc-tabs ion-tabs a .icon[ng-reflect-name="truck"][ng-reflect-is-active="true"] {
+    background-image: url(../assets/icon/truck.svg) !important;
+    background: #324d5c; 
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+page-doc-tabs ion-tabs a .icon[ng-reflect-name="driver"] {
+    background-image: url(../assets/icon/driver-dark.svg) !important;
+}
+page-doc-tabs ion-tabs a .icon[ng-reflect-name="driver"][ng-reflect-is-active="true"]  {
+    background-image: url(../assets/icon/driver.svg) !important;
+    background: #324d5c;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+page-doc-tabs ion-tabs a .icon[ng-reflect-name="trailer"] {
+    background-image: url(../assets/icon/trailer-dark.svg) !important;
+}
+page-doc-tabs ion-tabs a .icon[ng-reflect-name="trailer"][ng-reflect-is-active="true"] {
+    background-image: url(../assets/icon/trailer.svg) !important;
+    background: #324d5c;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
