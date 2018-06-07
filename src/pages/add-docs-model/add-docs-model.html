@@ -8,11 +8,17 @@
 
   <ion-navbar>
     <ion-title>Add Documents</ion-title>
-    <ion-buttons start>
-        <button ion-button icon-only (click)="closeModal()">
-          <ion-icon name="close"></ion-icon>
-        </button>
-      </ion-buttons>
+
+      <ion-buttons start>
+          <button ion-button icon-only (click)="closeModal()">
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-buttons end>
+          <button ion-button icon-only>
+            <ion-icon name="checkmark" ></ion-icon>
+          </button>
+        </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -65,9 +71,6 @@
       Upload button
       <input type="file" style="display: none">
     </label>
-  </div>
-  <div class="padding">
-    <button ion-button>Add</button>
   </div>
     </ion-list>
 </ion-content>
