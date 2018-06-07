@@ -274,16 +274,25 @@ page-payment-history ion-row ion-col:nth-child(1) {
 .menu-inner ion-content {
     background: #324d5c !important; /* Old browsers */
 }
-.menu-inner ion-content button {
+.menu-inner ion-content ion-list {
+    margin: 0 !important;
+}
+.menu-inner ion-content ion-list button {
     background: transparent !important;
+    padding-left: 50px;
 }
 .menu-inner ion-content ion-label {
     color: #fff !important;
     opacity: 1 !important;
 }
+.list-ios > .item-block:first-child {
+    border: none !important;
+}
 .menu-inner hr {
-    margin-bottom: 0;
-    background-color: rgba(255, 255, 255, 0.08) !important;
+    margin-top: 4px;
+    height: 1px;
+    background: #28424f;
+    margin-bottom: 4px;
 }
 
 .menu-inner .item-md {
@@ -305,4 +314,22 @@ page-payment-history ion-row ion-col:nth-child(1) {
 }
 .menu-inner .toolbar {
  min-height: 145px;
+}
+
+.menu-inner ion-label {
+    margin: 11px 8px 11px 0 !important;
+}
+
+.header-md::after {
+    display: none;
+}
+
+.menu-inner ion-label img {
+    position: absolute;
+    width: 21px;
+    left: 14px;
+    top: -3px;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.8;
 }

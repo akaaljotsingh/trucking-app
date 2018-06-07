@@ -15,11 +15,12 @@ import { Settings } from '../providers';
     </ion-header>
 
     <ion-content>
-      <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <ion-list *ngFor="let p of pages">
+        <button menuClose ion-item (click)="openPage(p)" >
           {{p.title}}
-          <hr *ngIf="p.break == true">
+          <img src="{{p.imgURL}}" alt="">
         </button>
+        <div *ngIf="p.break == true"><hr></div>
       </ion-list>
     </ion-content>
 
@@ -32,13 +33,14 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Driver', component: 'DriverPage' },
-    { title: 'Truck', component: 'TruckPage' },
-    { title: 'Trailer', component: 'TrailerPage' },
-    { title: 'Documents', component: 'DocTabsPage', break:true},
-    { title: 'My Profile', component: 'MyProfilePage' },
-    { title: 'My Account', component: 'MyAccountPage' },
-    { title: 'Payment History', component: 'PaymentHistoryPage' },
+    { title: 'My Profile', component: 'MyProfilePage', imgURL: '../assets/icon/profile.svg' },
+    { title: 'My Account', component: 'MyAccountPage', imgURL: '../assets/icon/account.svg'},
+    { title: 'Payment History', component: 'PaymentHistoryPage', break:true, imgURL: '../assets/icon/payment.svg'},
+    { title: 'Driver', component: 'DriverPage', imgURL: '../assets/icon/driver.svg' },
+    { title: 'Truck', component: 'TruckPage', imgURL: '../assets/icon/truck.svg' },
+    { title: 'Trailer', component: 'TrailerPage', imgURL: '../assets/icon/trailer.svg' },
+    { title: 'Documents', component: 'DocTabsPage', imgURL: '../assets/icon/document.svg'},
+    
    // { title: 'Welcome', component: 'WelcomePage' },
     // { title: 'Tabs', component: 'TabsPage' },
     // { title: 'Cards', component: 'CardsPage' },
