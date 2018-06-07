@@ -1,18 +1,11 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
 <ion-content>
-  <form (submit)="doLogin()">
+  <form (submit)="doLogin()"> 
     <ion-list>
 
+      <img src="../../assets/img/welcome-logo.svg" width="120" alt="">
+
       <ion-item>
-        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-label stacked>{{ 'EMAIL' | translate }}</ion-label>
         <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
       </ion-item>
 
@@ -26,12 +19,14 @@
       -->
 
       <ion-item>
-        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-label stacked>{{ 'PASSWORD' | translate }}</ion-label>
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
       <div padding>
         <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+        <p>or</p>
+        <button ion-button block (click)="signup()">{{ 'SIGNUP' | translate }}</button>
       </div>
 
     </ion-list>

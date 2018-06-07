@@ -333,3 +333,21 @@ page-payment-history ion-row ion-col:nth-child(1) {
     margin: auto;
     opacity: 0.8;
 }
+
+page-login .scroll-content {
+    display: flex !important;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+page-login form,
+page-signup form {
+    width: 100%;
+    text-align: center
+}
+
+page-login ion-label,
+page-signup ion-label {
+    text-align: left;
+}

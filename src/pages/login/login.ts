@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { IonicPage, NavController, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController, ViewController, App } from 'ionic-angular';
 
 import { User } from '../../providers';
 import { MainPage } from '../';
+import { SignupPage } from '../signup/signup';
 
 @IonicPage()
 @Component({
@@ -25,6 +26,8 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
+    public viewCtrl: ViewController,
+    public appCtrl: App,
     public translateService: TranslateService) {
 
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
@@ -46,5 +49,9 @@ export class LoginPage {
       });
       toast.present();
     });
+  }
+
+  signup() {
+    this.navCtrl.push('SignupPage');
   }
 }

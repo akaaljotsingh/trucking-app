@@ -1,14 +1,8 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>{{ 'SIGNUP_TITLE' | translate }}</ion-title>
-  </ion-navbar>
-
-</ion-header>
 
 
 <ion-content>
   <form (submit)="doSignup()">
+      <img src="../../assets/img/welcome-logo.svg" width="120" alt="" padding>
     <ion-list *ngIf="signupSteps==1">
 
       <div class="date-wrap">
