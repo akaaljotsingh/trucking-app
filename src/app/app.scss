@@ -251,6 +251,17 @@ ion-select {
 .doc-card h5 {
     color: #324d5c;
     margin: 0 !important;
+    margin-bottom: 3px !important;
+}
+.doc-card span.pr {
+    font-size: inherit;
+    margin-left: 5px;
+    background: #324d5c;
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 7px;
+    opacity: 1;
+    font-weight: 600;
 }
 
 .text-line {
