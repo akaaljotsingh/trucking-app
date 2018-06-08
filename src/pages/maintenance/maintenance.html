@@ -1,5 +1,5 @@
 <!--
-  Generated template for the DriverTabPage page.
+  Generated template for the MaintenancePage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -10,9 +10,9 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Driver Documents</ion-title>
+    <ion-title>Maintenance Records</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)="addDocModal()">
+      <button ion-button icon-only (click)="addMaintenanceModal()">
         <ion-icon name="add"></ion-icon>
       </button>
     </ion-buttons>
@@ -20,29 +20,28 @@
 
 </ion-header>
 
-
 <ion-content padding>
         <ion-list>
               <div class="doc-card">
                 <div class="left">
-                  <h5>Copy of CDL</h5>
-                  <span>(Exp Date: 8 Jul 24)</span>
+                  <h5>Truck: PB7896</h5>
+                  <span>Oil Change (8 Jul 18)</span>
                 </div>
-                <button class="right upload-file" (click)="addDocModal()"></button>
+                <button class="right upload-file" (click)="addMaintenanceModal()"></button>
               </div>
     
               <div class="doc-card">
                   <div class="left">
-                    <h5>Medical Card</h5>
-                    <span>(Exp Date: 8 Jul 24)</span>
+                    <h5>Trailer: US12</h5>
+                    <span>Alignment (11 Jun 18)</span>
                   </div>
                   <button class="right upload-file has-file"></button>
                 </div>
     
                 <div class="doc-card">
                     <div class="left">
-                      <h5>Original MVR</h5>
-                      <span>(Exp Date: 8 Jul 24)</span>
+                      <h5>Truck: CA34</h5>
+                      <span>Others (23 Aug 18)</span>
                     </div>
                     <button class="right upload-file has-file"></button>
                   </div>

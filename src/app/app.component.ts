@@ -41,6 +41,7 @@ export class MyApp {
     { title: 'Truck', component: 'TruckPage', imgURL: '../assets/icon/truck.svg' },
     { title: 'Trailer', component: 'TrailerPage', imgURL: '../assets/icon/trailer.svg' },
     { title: 'Documents', component: 'DocTabsPage', imgURL: '../assets/icon/document.svg'},
+    { title: 'Maintenance Records', component: 'MaintenancePage', imgURL: '../assets/icon/records.svg'},
     
    // { title: 'Welcome', component: 'WelcomePage' },
     // { title: 'Tabs', component: 'TabsPage' },

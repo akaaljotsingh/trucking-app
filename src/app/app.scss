@@ -229,12 +229,17 @@ ion-select {
     height: 40px;
     width: 40px;
 }
-.doc-card button {
-    background: #de5b49 !important;
+.doc-card button.upload-file {
+    background-color: #de5b49 !important;
     border-radius: 50%;
+    background-image: url('../assets/img/upload-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
 }
 .doc-card button.has-file {
-    background: #70de83 !important;
+    background-color: #70de83 !important;
+    background-image: url('../assets/img/download-icon.svg');
 }
 .doc-card button img {
     max-width: 20px;
