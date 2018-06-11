@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 
-import { AddMaintenancePage } from '../add-maintenance/add-maintenance';
+import { AddMaintenancePage } from './add-maintenance/add-maintenance';
 
 /**
  * Generated class for the MaintenancePage page.

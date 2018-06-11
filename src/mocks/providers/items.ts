@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import { Item } from '../../models/item';
 
 @Injectable()
 export class Items {
-  items: Item[] = [];
+  items: any = [];
 
   defaultItem: any = {
     "name": "Driving Licence",
@@ -67,7 +66,7 @@ export class Items {
     ];
 
     for (let item of items) {
-      this.items.push(new Item(item));
+      this.items.push(item);
     }
   }
 
@@ -89,11 +88,11 @@ export class Items {
     });
   }
 
-  add(item: Item) {
+  add(item) {
     this.items.push(item);
   }
 
-  delete(item: Item) {
+  delete(item) {
     this.items.splice(this.items.indexOf(item), 1);
   }
 }

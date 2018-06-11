@@ -22,6 +22,12 @@ import { Settings } from '../providers';
         </button>
         <div *ngIf="p.break == true"><hr></div>
       </ion-list>
+    <ion-list>
+    <div><hr></div>
+    <button menuClose ion-item (click)="signOut()" >
+    Signout         
+    </button>
+    </ion-list>
     </ion-content>
 
   </ion-menu>
@@ -35,24 +41,15 @@ export class MyApp {
   pages: any[] = [
     { title: 'Dashboard', component: 'ListMasterPage', imgURL: '../assets/icon/dashboard.svg' },
     { title: 'My Profile', component: 'MyProfilePage', imgURL: '../assets/icon/profile.svg' },
-    { title: 'My Account', component: 'MyAccountPage', imgURL: '../assets/icon/account.svg'},
-    { title: 'Payment History', component: 'PaymentHistoryPage', break:true, imgURL: '../assets/icon/payment.svg'},
+    { title: 'My Account', component: 'MyAccountPage', imgURL: '../assets/icon/account.svg' },
+    { title: 'Payment History', component: 'PaymentHistoryPage', break: true, imgURL: '../assets/icon/payment.svg' },
     { title: 'Driver', component: 'DriverPage', imgURL: '../assets/icon/driver.svg' },
     { title: 'Truck', component: 'TruckPage', imgURL: '../assets/icon/truck.svg' },
     { title: 'Trailer', component: 'TrailerPage', imgURL: '../assets/icon/trailer.svg' },
-    { title: 'Documents', component: 'DocTabsPage', imgURL: '../assets/icon/document.svg'},
-    { title: 'Maintenance Records', component: 'MaintenancePage', imgURL: '../assets/icon/records.svg'},
-    
-   // { title: 'Welcome', component: 'WelcomePage' },
-    // { title: 'Tabs', component: 'TabsPage' },
-    // { title: 'Cards', component: 'CardsPage' },
-    // { title: 'Content', component: 'ContentPage' },
-   // { title: 'Login', component: 'LoginPage' },
-   // { title: 'Signup', component: 'SignupPage' },
-   // { title: 'Master Detail', component: 'ListMasterPage' },
-    // { title: 'Menu', component: 'MenuPage' },
-    // { title: 'Settings', component: 'SettingsPage' },
-    // { title: 'Search', component: 'SearchPage' },
+    { title: 'Documents', component: 'DocTabsPage', imgURL: '../assets/icon/document.svg' },
+    { title: 'Maintenance Records', component: 'MaintenancePage', imgURL: '../assets/icon/records.svg' },
+
+
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
@@ -62,7 +59,7 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
-    this.initTranslate();
+  //  this.initTranslate();
   }
 
   initTranslate() {
@@ -90,7 +87,7 @@ export class MyApp {
       this.config.set('ios', 'backButtonText', values.BACK_BUTTON_TEXT);
     });
   }
-
+  signOut() {}
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
